@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FashionFun</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>FashionFun</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#avatar">Create Avatar</a>
+      <a href="#shop">Shop</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to FashionFun</h2>
+    <p>Experience gamified fashion styling and shop curated looks. Create your avatar, try on outfits, and shop the entire look!</p>
+  </section>
+
+  <section id="avatar">
+    <h2>Create Your Avatar</h2>
+    <form>
+      <label for="skin-tone">Skin Tone:</label>
+      <select id="skin-tone">
+        <option value="light">Light</option>
+        <option value="medium">Medium</option>
+        <option value="dark">Dark</option>
+      </select>
+
+      <label for="body-type">Body Type:</label>
+      <select id="body-type">
+        <option value="slim">Slim</option>
+        <option value="average">Average</option>
+        <option value="curvy">Curvy</option>
+      </select>
+
+      <button type="button" onclick="createAvatar()">Create Avatar</button>
+    </form>
+    <div id="avatar-preview">
+      <p>Your avatar will appear here.</p>
+    </div>
+  </section>
+
+  <section id="shop">
+    <h2>Shop Curated Looks</h2>
+    <div class="product">
+      <h3>Look #1</h3>
+      <img src="dress.jpg" alt="Dress">
+      <p>Price: $49.99</p>
+      <button type="button" onclick="tryOn()">Try On</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 FashionFun. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
